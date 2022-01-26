@@ -1,0 +1,91 @@
+family_name = "Noto Sans"
+
+[axes.Weight]
+tag = "wght"
+minimum = 100
+default = 400
+maximum = 900
+
+[axes.Weight.mapping]
+100 = 26
+200 = 39
+300 = 58
+400 = 90
+500 = 108
+600 = 128
+700 = 151
+800 = 169
+900 = 190
+
+[axes.Weight.labels]
+100 = { name = "Hair" }
+200 = { name = "Thin" }
+300 = { name = "Light" }
+400 = { name = "Regular", elidable = true, linkeduservalue = 700 }
+500 = { name = "Medium" }
+600 = { name = "SemiBold" }
+700 = { name = "Bold" }
+800 = { name = "XBold" }
+900 = { name = "Black" }
+
+[axes.Width]
+tag = "wdth"
+minimum = 62.5
+default = 100
+maximum = 100
+
+[axes.Width.mapping]
+"62.5" = 70
+"75" = 79
+"87.5" = 89
+"100" = 100
+
+[axes.Width.labels]
+"62.5" = { name = "Extra Condensed" }
+"75" = { name = "Condensed" }
+"87.5" = { name = "Semi Condensed" }
+"100" = { name = "Normal", elidable = true }
+
+[axes.Contrast]
+tag = "CTRG"
+minimum = 0
+default = 0
+maximum = 100
+ 
+[axes.Contrast.labels]
+0 = { name = "Normal", elidable = true }
+100 = { name = "Display" }
+
+[sources.regular.location]
+Weight = 90
+Width = 100
+Contrast = 0
+
+[sources.bold.location]
+Weight = 190
+Width = 100
+Contrast = 0
+
+[sources.displayregular.location]
+Weight = 90
+Width = 100
+Contrast = 100
+
+[sources.displaybold.location]
+Weight = 190
+Width = 100
+Contrast = 100
+
+[sources.condensed.location]
+Weight = 90
+Width = 70
+Contrast = 0
+
+# ... Instances ...
+
+[instances."Noto Sans Medium"]
+stylename = "Medium"
+location = { Weight = 108, Width = 100, Contrast = 0 }
+panose = [2, 11, 6, 2, 4, 5, 4, 2, 2, 4]
+
+# ... Other instances ...

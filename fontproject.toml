@@ -1,0 +1,32 @@
+[variable_fonts]
+
+[variable_fonts."LatnCyrlArab_WghtWdthCTRG"]
+axes = { Weight = true, Width = true, Contrast = true }
+sets = ["common", "latin", "cyrillic", "arabic"]
+format = "TTF"
+path = "NotoSans_LatnCyrlArab_WghtWdthCTRG.ttf"
+
+[variable_fonts."Arabic_WghtWdth"]
+axes = { Weight = true, Width = true }
+sets = ["common", "arabic"]
+format = "TTF"
+path = "NotoSans_Arabic_WghtWdth.ttf"
+
+[variable_fonts."LatnCyrl_WghtCTRG"]
+axes = { Weight = true, Contrast = true }
+sets = ["common", "latin", "cyrillic"]
+format = "TTF"
+path = "NotoSans_LatnCyrl_WghtCTRG.ttf"
+
+[variable_fonts."Arabic_WghtWdth"]
+axes = { Weight = true, Width = true }
+sets = ["common", "arabic"]
+format = "TTF"
+path = "NotoSans_Arabic_WghtWdth.ttf"
+
+
+[export.UFO]
+
+[export.UFO.cyrillic]
+sets = ["common", "cyrillic"]
+follow_components = true
